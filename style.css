@@ -120,6 +120,28 @@ header inner-column {
     gap: 16px;
 }
 
+information {
+    display: block;
+    align-items: center;
+}
+
+information picture {
+    display: flex;
+}
+
+information p {
+    margin-top: 10px;
+}
+
+@media (min-width: 700px) {
+    information {
+        flex-direction: row-reverse;
+    }
+    information :is(text-content, picture) {
+        flex-basis: 25%;
+    }
+}
+
 /*TYPOGRAPHY */
 .loud-voice {
     font-family: sans-serif;
